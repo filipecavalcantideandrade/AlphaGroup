@@ -1,0 +1,175 @@
+/* Formatação da tela clientes */
+
+.cadastroCliente {
+    height: 500px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* Formatação do Formulário - Cadastro de clientes */
+
+#formCliente p {
+    font-size: 10pt;
+    text-align: left;
+    color: var(--color-text-default);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.setores {
+    font-size: 10pt;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#formCliente input {
+    display: flex;
+    width: 240px;
+    height: 25px;
+    color: var(--color-text-details);
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.tabelaSetor {
+    width: 100%;
+    color: var(--color-text-default);
+    border-collapse: collapse;
+}
+
+.tabelaSetor td {
+    font-size: small;
+    text-align: center;
+    padding: 0px;
+    background: none;
+    border: 1px solid;
+}
+
+tr:nth-child(even) {
+    background-color: #424242;
+}
+
+tr:nth-child(odd) {
+    background-color: #1b1b1b;
+}
+
+
+/* Formatação do botão - Salvar e Sair */
+
+.salvarSair {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.salvarDeslogar {
+    width: 70px;
+    height: 30px;
+    font-size: 10pt;
+    text-align: center;
+    color: var(--color-text-default);
+    cursor: pointer;
+}
+
+#salvar {
+    font-weight: bold;
+    color: var(--color-text-default);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-green);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#deslogar {
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-text-details);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Formatação do painel de clientes */
+
+#clientes {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-text-default);
+    margin-left: 30px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.clientes {
+    padding: 5px;
+}
+
+.editarExcluir {
+    display: flex;
+    justify-content: space-evenly;
+    transform: var(--btn-click);
+}
+
+.editar {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-text-default);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-green);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+
+.excluir {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-text-default);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-red);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Responsividade */
+
+@media (max-width: 905px) {
+
+    .cadastroCliente {
+        height: 445px;
+        padding: 10px 30px;
+    }
+
+    #formCliente p {
+        margin-top: 0px;
+    }
+
+    .setores {
+        margin-top: 10px;
+    }
+
+    .clientes {
+        margin: 5px;
+    }
+
+    #clientes {
+        width: 300px;
+        margin: 30px;
+    }
+    
+    .empresa {
+        margin-left: 0px;
+    }
+}

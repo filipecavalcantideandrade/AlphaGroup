@@ -1,0 +1,140 @@
+/* Formatação do corpo e titulos */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+:root {
+    --color-text-default: #fefefe;
+    --color-text-details: #1b1b1b;
+    --background-color-default: #6d6d6d;
+    --btn-green: #2e7d32;
+    --btn-red: #b24940;
+
+    --btn-click: translateY(3px);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color-default);
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21pt;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--color-text-default);
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #1b1b1b;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-text-default);
+}
+
+/* Formatação do Layout */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.usuario {
+    height: 50%;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.usuario p {
+    font-size: 10pt;
+    color: var(--color-text-default);
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.usuario a {
+    display: flex;
+    justify-content: center;
+    color: var(--color-text-default);
+    text-decoration: none;
+}
+
+.usuario a:hover {
+    text-decoration: underline;
+}
+
+.usuario input {
+    height: 20px;
+    display: flex;
+    color: var(--color-text-details);
+    margin-bottom: 30px;
+}
+
+#entrar, #cadastrar {
+    height: 40px;
+    width: 100%;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-text-default);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-text-details);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#entrar:active, #cadastrar:active, #deslogar:active, #salvar:active, .editar:active, .excluir:active {
+    transform: var(--btn-click);
+}
+
+/* Formatação do rodapé */
+
+.redeSocial {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color-text-default);
+}
+
+.redeSocial a {
+    text-decoration: none;
+    margin-top: 10px;
+    color: var(--color-text-default);
+}
+
+.redeSocial a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/* Responsividade */
+
+@media (max-width: 905px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+}
